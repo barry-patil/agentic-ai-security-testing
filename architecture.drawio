@@ -1,0 +1,102 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Agentic AI Security Testing" id="0">
+    <mxGraphModel dx="1377" dy="904" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1500" pageHeight="860" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="text;html=1;align=center;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;" value="Agentic AI Security Testing — OWASP LLM Top 10 Scanner" vertex="1">
+          <mxGeometry height="30" width="1000" x="250" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" value="Test Orchestrator&#xa;(Python — drives all tests)" vertex="1">
+          <mxGeometry height="65" width="240" x="600" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#232F3E;fontColor=#ffffff;strokeColor=#555;fontSize=11;fontStyle=1;" value="Target LLM&#xa;OpenAI GPT-4 / Claude / custom" vertex="1">
+          <mxGeometry height="65" width="240" x="600" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#b85450;strokeWidth=2;verticalAlign=top;fontSize=12;fontStyle=1;" value="OWASP LLM Top 10 — Test Modules" vertex="1">
+          <mxGeometry height="300" width="1360" x="40" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;" value="LLM01&#xa;Prompt Injection" vertex="1">
+          <mxGeometry height="55" width="140" x="60" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;" value="LLM02&#xa;Insecure Output&#xa;Handling" vertex="1">
+          <mxGeometry height="55" width="140" x="220" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;" value="LLM03&#xa;Training Data&#xa;Poisoning" vertex="1">
+          <mxGeometry height="55" width="140" x="380" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;" value="LLM06&#xa;Sensitive Info&#xa;Disclosure" vertex="1">
+          <mxGeometry height="55" width="140" x="540" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;" value="LLM07&#xa;Insecure Plugin&#xa;Design" vertex="1">
+          <mxGeometry height="55" width="140" x="700" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;" value="LLM08&#xa;Excessive Agency" vertex="1">
+          <mxGeometry height="55" width="140" x="860" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;" value="LLM09&#xa;Overreliance" vertex="1">
+          <mxGeometry height="55" width="140" x="1020" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;" value="LLM10&#xa;Model Theft" vertex="1">
+          <mxGeometry height="55" width="140" x="1180" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;" value="Result Evaluator&#xa;pass / fail / severity scoring" vertex="1">
+          <mxGeometry height="60" width="240" x="60" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;" value="HTML Security Report&#xa;per-test breakdown + remediation hints" vertex="1">
+          <mxGeometry height="60" width="260" x="340" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2088FF;fontColor=#ffffff;strokeColor=#1a6fcc;fontSize=11;fontStyle=1;" value="CI Integration&#xa;GitHub Actions — blocks PR on CRITICAL" vertex="1">
+          <mxGeometry height="60" width="280" x="640" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" value="Attack Prompt Library&#xa;200+ adversarial prompts per category" vertex="1">
+          <mxGeometry height="60" width="280" x="60" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" value="Test Config YAML&#xa;target_url, model, categories, severity_threshold" vertex="1">
+          <mxGeometry height="60" width="180" x="380" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="40" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#9673a6;strokeWidth=1.5;" target="10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="305" />
+              <mxPoint x="720" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="41" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#9673a6;strokeWidth=1.5;" target="10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="305" />
+              <mxPoint x="720" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="10" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#b85450;strokeWidth=2;fontSize=9;" target="11" value="sends adversarial prompts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="10" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#b85450;strokeWidth=2;" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#d6b656;strokeWidth=2;" target="30">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="739" />
+              <mxPoint x="180" y="739" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="30" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#82b366;strokeWidth=1.5;" target="31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="30" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#1a6fcc;strokeWidth=1.5;" target="32">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="618" />
+              <mxPoint x="780" y="618" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
